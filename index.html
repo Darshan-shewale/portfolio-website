@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darshan Shewale Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Darshan Shewale</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <section id="about" class="text-center">
+      <h2>About Me</h2>
+      <p class="lead">Business Analyst with 3.6+ years of experience in data analytics, BI development, and machine learning.</p>
+    </section>
+
+    <section id="skills" class="mt-5">
+      <h2>Skills</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Programming & Databases</h5>
+          <p>Python, SQL/MySQL, C++, HTML, JavaScript, CSS</p>
+        </div>
+        <div class="col-md-4">
+          <h5>BI & Tools</h5>
+          <p>Power BI, Tableau, DAX, ETL, A/B Testing</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Other Skills</h5>
+          <p>Advanced Excel, BigQuery, Root Cause Analysis</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="mt-5">
+      <h2>Experience</h2>
+      <div class="accordion" id="experienceAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              Atidiv Pvt Ltd (2023 - Present)
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              Optimized SQL queries and built Power BI dashboards for sales analysis.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Simplify Pvt Ltd (2018 - 2022)
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Validated data using SQL and improved data accuracy by 70%.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mt-5">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Biomedical Chatbot</h5>
+              <p class="card-text">Integrated GPT-3.5 with ReactJS to create a chatbot for medical assistance.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">AI-Based Mood Tracker</h5>
+              <p class="card-text">Built an NLP-powered emotion tracker to offer personalized mood improvement suggestions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mt-5">
+      <h2>Contact Me</h2>
+      <form action="contact.php" method="POST" class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Darshan Shewale | <a href="https://github.com/Darshan-shewale" class="text-white">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/darshan-sh" class="text-white">LinkedIn</a></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
